@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Essential</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+@theme {
+    --color-brand1 : #3056D3;
+    --color-brand2 : #D5FF40;
+    --color-brand3 : #171c35;
+    --color-brand4 : #F0F2F8;
+    --color-brand5 : #F7F8FC;
+    --font-sans: "Plus Jakarta Sans", sans-serif;
+        }
+
+       
+@layer components {
+    .ctn {
+        @apply rounded-xl bg-brand5 p-6;
+    }
+
+    .info-cd {
+        @apply rounded-xl border border-slate-200 bg-white p-5;
+    }
+
+    .btn-1 {
+        @apply inline-block rounded-xl bg-brand1 px-6 py-3 text-sm font-bold text-white;
+    }
+
+    .btn-2 {
+        @apply inline-block rounded-xl bg-brand2 px-6 py-3 text-sm font-bold text-brand3;
+    }
+}
+
+    </style>
+</head>
+<body class="bg-brand4 font-sans text-brand3">
+    <header class="bg-brand5">
+        <div class="mx-auto flex w-[95%] max-w-[1280px] flex-col items-center justify-between gap-4 py-4 md:flex-row">
+            <img src="assets/logo.png" alt="LOGO" class="w-36 md:w-40">
+            <nav class="flex flex-wrap items-center justify-center gap-4 text-sm font-bold md:gap-8">
+                <a href="index.html" class="hover:text-brand1">Beranda</a>
+                <a href="program.html" class="hover:text-brand1">Program</a>
+                <a href="index.html#tkami" class="hover:text-brand1">Tentang Kami</a>
+                <a href="index.html#kontak" class="hover:text-brand1">Kontak</a>
+                <a href="daftar.html" class="btn-1 hover:bg-brand3">Daftar</a>
+            </nav>
+        </div>
+    </header>
+<main class="mx-auto my-6 w-[95%] max-w-[1280px] space-y-6">
+    <section class="ctn grid items-center gap-8 md:grid-cols-2 md:p-10">
+        <div>
+            <p class="mb-3 text-sm font-bold text-brand1">GENERAL ENGLISH - BEGINNER</p>
+            <h1 class="mb-5 text-3xl font-extrabold leading-tight md:text-5xl">
+                English <span class="text-brand1">Essential</span>
+            </h1>
+            <p class="mb-6 leading-7 text-slate-800">Mulai belajar bahasa inggris dari nol dengan materi yang mudah dipahami. Kenali dasar grammar, vocabulary, dan kemampuan menulismu bersama LUMOS
+            </p>
+            <div class="mb-8 flex flex-wrap gap-2 text-sm">
+                <span class="rounded-lg bg-white px-3 py-2">Pemula</span>
+                <span class="rounded-lg bg-white px-3 py-2"> 4 Materi Utama</span>
+                <span class="rounded-lg bg-white px-3 py-2"> Belajar Bertahap</span>
+            </div>
+            <div class="flex flex-wrap gap-3">
+                <a href="daftar.html" class="btn-2">Mulai Belajar</a>
+                <a href="#materi" class="btn-1">Lihat Materi</a>
+            </div>
+        </div>
+        <img src="assets/program1.jpg" alt="program1" class="h-64 w-full rounded-xl object-cover md:h-80">
+    </section>
+
+</main>
+<footer class="mt-12 bg-brand3 px-6 py-10 text-white">
+    <div class="mx-auto mx-w[1280px]">
+        <div class="mb-8 flex flex-col items-center justify-between gap-4 text-sm md:flex-row">
+            <a href="#privacy" class="text-slate-300">Privacy</a>
+            <a href="#terms" class="text-slate-300">Terms of Service</a>
+            <a href="#kontak" class="text-slate-300">Contact</a>
+        </div>
+        <p class="text-center text-sm text-slate-400">&copy;2026 LUMOS. All Rights Reserved</p>
+    </div>
+</footer>
+    
+</body>
+</html>

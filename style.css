@@ -113,7 +113,6 @@ header {
     left: 25px;
     top: 50%;
     transform: translateY(-50%);
-    pointer-events: none;
 }
 
 .hero-ctn h1 {
@@ -177,7 +176,6 @@ header {
     right: 25px;
     top: 50%;
     transform: translateY(-50%);
-    pointer-events: none;
 }
 
 .hero-ctn h1,
@@ -280,19 +278,21 @@ header {
     margin-bottom: 16px;
 }
 
-.program-cd h3 {
+.program-cd h3 a {
     font-size: 17px;
     font-weight: 700;
     color: #171C35;
-    margin-bottom: 8px;
+    text-decoration: none;
 }
 
 .program-cd p {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.7;
     color: #475467;
+    margin-top: 16px;
 }
+
 
 .program-btn {
     display: flex;
