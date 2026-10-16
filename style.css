@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans',arial;
+    background-color: #F0F2F8;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    background-color: #F7F8FC;
+}
+
+.page-ctn {
+    width: 95%;
+    max-width: 1280px;
+    margin: 24px auto;
+}
+
+.logo img {
+    width: 170px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px 12px 40px;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 65px;
+    background-color: #F7F8FC;
+    border-bottom: 1px solid #E8EAF1;
+}
+
+.navlink {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navlink a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #171C35;
+    text-decoration: none;
+    transition: color 0.2 ease;
+}
+
+.navlink a:hover {
+    background-color: #EEF2FF;
+    color: #3056D3;
+}
+.navlink a.navlink-btn {
+    background-color: #3056D3;
+    color: #F7F8FC;
+    padding: 10px 28px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.navlink a.navlink-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.94);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 460px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hero-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+}
+
+.hero-ctn {
+    width: 100%;
+    background-color: #F7F8FC;
+    text-align: center;
+    padding: 40px 16px 40px 16px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero1 {
+    position: absolute;
+    width: 190px;
+    height: auto;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.hero-ctn h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #171C35;
+    margin-bottom: 20px;
+}
+
+.hero-ctn h1 span {
+    color: #3056D3;
+}
+
+.hero-ctn p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #171C35;
+    max-width: 650px;
+    margin: 0 auto 32px;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-btn a {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.hero-btn a:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.94);
+}
+
+.btn-1 {
+   background-color: #D5FF40;
+   color: #171C35; 
+}
+
+.btn-2 {
+    background-color: white;
+    color: #3056D3;
+    border: 1px solid #3056D3;
+}
+
+.hero2 {
+    position: absolute;
+    width: 190px;
+    height: auto;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.hero-ctn h1,
+.hero-ctn p,
+.hero-btn {
+    position: relative;
+    z-index: 2;
+}
+
+.fitur-ctn {
+    width: 100%;
+    background-color: #F7F8FC;
+    border-radius: 12px;
+    padding: 40px 16px 40px 16px;
+    margin-top: 24px;
+}
+
+.fitur-head {
+    margin-bottom: 40px;
+}
+
+.fitur-head h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #171C35;
+    margin-bottom: 16px;
+}
+
+.fitur-head p {
+    max-width: 800px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #171C35;
+}
+
+.fitur-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+}
+.fitur-cd {
+    background-color: #F7F8FC;
+    border: 1px solid   #CBD5E1;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.fitur-cd img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.fitur-cd h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #171C35;
+    margin-bottom: 8px;
+}
+
+.fitur-cd p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #3056D3;
+}
+
+.program-ctn {
+    margin: 72px auto;
+    padding: 48px 32px;
+    background-color: #F7F8FC;
+    border-radius: 12px;
+    margin-top: 24px;
+}
+
+.program-head {
+    margin-bottom: 28px;
+}
+
+.program-head h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #171C35;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.program-cd img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.program-cd h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #171C35;
+    margin-bottom: 8px;
+}
+
+.program-cd p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #475467;
+}
+
+.program-btn {
+    display: flex;
+    padding: 12px 16px 12px 16px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.program-btn a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #D5FF40;
+    color: #171C35;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 10px;
+    border-radius: 12px;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.program-btn a:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.94);
+}
+
+footer {
+    width: 100%;
+    background-color: #171C35;
+    padding: 48px 24px 28px;
+    margin-top: 72px;
+}
+
+.footer-ctn {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.footer-link a {
+    color: #d1d5db;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-ctn p {
+    color: #9ca3af;
+    font-size: 13px;
+    text-align: center;
+}
+
+.footer-link a:hover {
+    color: #F5F5F5
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        width: 94%;
+        padding: 12px 0;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .navlink {
+        gap: 16px;
+    }
+
+    .navlink a {
+        font-size: 14px;
+    }
+
+    .navlink a.navlink-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .page-ctn {
+        width: 94%;
+    }
+
+    .hero-img {
+        height: 360px;
+    }
+
+    .hero1,
+    .hero2 {
+        display: none;
+    }
+
+    .hero-ctn h1 {
+        font-size: 34px;
+    }
+
+    .fitur-grid,
+    .program-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .program-ctn {
+        padding: 36px 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        width: 94%;
+        height: auto;
+        padding: 16px 0;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .navlink {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 16px;
+    }
+
+    .navlink a {
+        font-size: 13px;
+    }
+
+    .navlink a.navlink-btn {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+
+    .page-ctn {
+        width: 94%;
+        margin: 16px auto;
+    }
+
+    .hero {
+        gap: 16px;
+    }
+
+    .hero-img {
+        height: 240px;
+    }
+
+    .hero1,
+    .hero2 {
+        display: none;
+    }
+
+    .hero-ctn {
+        padding: 32px 16px;
+    }
+
+    .hero-ctn h1 {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .hero-ctn p {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .hero-btn {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero-btn a {
+        font-size: 13px;
+        padding: 12px 18px;
+    }
+
+    .fitur-ctn {
+        padding: 28px 16px;
+        margin-top: 16px;
+    }
+
+    .fitur-head {
+        margin-bottom: 24px;
+    }
+
+    .fitur-head h2,
+    .program-head h2 {
+        font-size: 24px;
+    }
+
+    .fitur-head p {
+        font-size: 14px;
+    }
+
+    .fitur-grid,
+    .program-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .fitur-cd {
+        padding: 20px;
+    }
+
+    .program-ctn {
+        padding: 28px 16px;
+        margin-top: 16px;
+        margin-bottom: 40px;
+    }
+
+    .program-btn {
+        margin-top: 24px;
+    }
+
+    footer {
+        padding: 36px 16px 24px;
+        margin-top: 40px;
+    }
+
+    .footer-link {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+}

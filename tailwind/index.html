@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-brand: #3056D3;
+            --color-brand-hover: #2545B7;
+            --color-accent: #D5FF40;
+            --color-accent-hover: #C0E637;
+            --color-navy: #171C35;
+            --color-page: #F0F2F8;
+        }
+
+        @layer components {
+            .btn {
+                @apply inline-block rounded-lg px-5 py-3 font-semibold transition-colors duration-200;
+            }
+
+            .btn-brand {
+                @apply bg-brand text-white hover:bg-brand-hover;
+            }
+
+            .btn-accent {
+                @apply bg-accent text-navy hover:bg-accent-hover;
+            }
+
+            .btn-outline {
+                @apply border border-brand bg-white text-brand hover:bg-gray-100;
+            }
+        }
+    </style>
+</head>
+<body class="bg-page text-navy" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+
+    <header class="bg-white border-b">
+        <div class="max-w-6xl mx-auto p-5 flex flex-wrap items-center justify-between gap-5">
+            <div>
+                <img src="assets/logo.png" alt="logo" class="w-36">
+            </div>
+            <nav class="flex flex-wrap items-center gap-5 text-sm font-semibold">
+                <a href="#beranda" class="hover:text-brand transition-colors duration-200">Beranda</a>
+                <a href="#program" class="hover:text-brand transition-colors duration-200">Program</a>
+                <a href="#tkami" class="hover:text-brand transition-colors duration-200">Tentang Kami</a>
+                <a href="#kontak" class="hover:text-brand transition-colors duration-200">Kontak</a>
+                <a href="daftar" class="btn btn-brand py-2">Daftar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-5">
+
+        <section  class="py-12 flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl font-bold mb-5">Satu Bahasa,<br> <span class="text-brand">Satu Juta Peluang</span></h1>
+                <p class="text-gray-600 mb-6">Belajar bahasa Inggris jadi lebih seru dan fleksibel. Mulai dari langkah kecil, tingkatkan kemampuanmu, dan buka sejuta peluang untuk masa depan.</p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#daftar" class="btn btn-accent">Mulai Belajar</a>
+                    <a href="#daftar" class="btn btn-outline">Eksplor</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="assets/hero.png" alt="hero" class="w-full rounded-xl"> 
+            </div>
+        </section>
+
+        <section class="py-12">
+            <h2 class="text-3x1 font-bold mb-3">Kenapa Pilih Kami?</h2>
+            <p class="text-gray-600 mb-8">Belajar bahasa Inggris nggak harus ribet! Di sini, kamu bisa mulai dari nol, belajar kapan aja, dan jadi makin jago dengan cara yang simpel dan seru</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <article class="bg-white border rounded-lg p-6">
+                    <img src="assets/fitur1.png" alt="fitur1" class="w-12 mb-4">
+                    <h3 text="text-lg font-bold mb-2">Mulai dari Nol? Bisa!</h3>
+                    <p class="text-gray-600">Belum jago bahasa Inggris? Tenang aja! Materinya gampang dipahami, bahkan buat kamu yang baru mulai belajar</p>
+                </article>
+
+                 <article class="bg-white border rounded-lg p-6">
+                    <img src="assets/fitur2.png" alt="fitur2" class="w-12 mb-4">
+                    <h3 class="text-lg font-bold">Belajar Kapan Aja? Bisa!</h3>
+                    <p class="text-gray-600">Mau belajar pagi, siang, atau malam? Bebas! Belajar sesuai waktumu tanpa harus mengganggu aktivitas sehari-hari</p>
+                </article>
+
+                 <article class="bg-white border rounded-lg- p-6">
+                    <img src="assets/fitur3.png" alt="fitur3" class="w-12 mb-4">
+                    <h3 class="text-lg font-bold mb-2">Makin Jago Bahasa Inggris? Bisa!</h3>
+                    <p class="text-gray-600">Ikuti materi step by step, pantau progres belajarmu, dan jadi makin percaya diri pakai bahasa Inggris!</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="py-12">
+           <h2 class="text-3x1 font-bold mb-8">Program Unggulan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <article class="bg-white border rounded-lg p-5">
+                    <img src="assets/program1.jpg" alt="program1" class="w-full rounded-lg mb-4">
+                    <h3 class="text-lg font bold mb-2">English Essential</h3>
+                    <p class="text-gray-600">Mulai perjalanan bahasa inggrismu dari dasar! Pelajari grammar, vocabulary dan cara meyusun kalimat dengan mudah.</p>
+                </article> 
+
+                <article class="bg-white border rounded-lg p-5">
+                    <img src="assets/program2.jpg" alt="program2" class="w-full rounded lg mb-4">
+                    <h3 class="text-lg font-bold mb-2">Speak Up!</h3>
+                    <p class="text-gray-600">Bikin ngobrol bahasa inggris jadi lebih percaya diri! Latih kemampuan speaking dan listening lewat percakapan sehari-hari.</p>
+                </article>
+
+                <article class="bg-white border rounded-lg p-5">
+                    <img src="assets/program3.jpg" alt="program3" class="w-full rounded lg-4 mb-4">
+                    <h3 class="text-lg fon-bold mb-2">Career English</h3>
+                    <p class="text-gray-600">Buka lebih banyak peluang karier dengan bahasa Inggris! Belajar komunikasi profesional untuk interview, meeting dan dunia kerja.</p>
+                </article>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#program" class="btn btn-accent px-6">Lihat Semua Program</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-navy text-white p-8 mt-10">
+        <div class="max-w-6x1 mx-auto text-center">
+            <div class="flex flex-wrap justify-center gap-6 mb-5">
+                <a href="#privacy" class="hover:text-accent transition-colors duration-200">Privacy Policy</a>
+                <a href="#terms" class="hover:text-accent transition-colors duration-200">Terms of Service</a>
+                <a href="kontak" class="hover:text-accent transition-colors duration-200">Kontak Kami</a>
+            </div>
+            <p class="text-sm text-gray-400">&copy; 2026 Lumos. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
